@@ -11,23 +11,23 @@ using namespace std;
 
 int main()
 {
-	array<int, 5> array{5, 3, 4, 1, 2};
+	array<int, 5> data{5, 3, 4, 1, 2};
 
-	for (int i = 1; i < 5; i++)
+	for (int i = 1; i < data.size(); i++)
 	{
-		int x = array[i], k = i;
+		int x = data[i], k = i;
 
-		while (k > 0 && array[k - 1] > x)
+		while (k > 0 && data[k - 1] > x)
 		{
-			array[k] = array[k - 1];
+			data[k] = data[k - 1];
 			k = k - 1;
 		}
-		array[k] = x;
+		data[k] = x;
 	}
 
 	// •\¦
-	for (int i = 0; i < 5; i++)
-		cout << array[i] << endl;
+	for (int i = 0; i < data.size(); i++)
+		cout << data[i] << endl;
 
 	// “ü—Í‘Ò‚¿
 	cin.get();
