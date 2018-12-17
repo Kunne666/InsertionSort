@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+
 	array<int, 5> data{5, 3, 4, 1, 2};
 
 	for (int i = 1; i < data.size(); i++)
